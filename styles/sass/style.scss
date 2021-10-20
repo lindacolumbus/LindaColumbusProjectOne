@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'normalize';
+
+h1 {
+    color: blue;
+}
+
+// EXAMPLE OF MIXIN
+// @mixin buttonStyle($buttonColor: $mainColor) {
+//     text-decoration: none;
+//     color: black;
+//     padding: 10px 20px;
+//     background-color: $buttonColor;
+// }
+
+// .button {
+//     @include buttonStyle(papayawhip);
+// }
