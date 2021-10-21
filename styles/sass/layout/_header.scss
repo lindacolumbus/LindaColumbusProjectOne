@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 55%;
+        }
+        .home {
+            color: $accentTextColor;
+        }
+    }
+
+.fa-shopping-bag {
+    position: relative;
+}
+
+.fa-shopping-bag::after {
+    content: '2';
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color: $darkThemeTextAccent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $accentTextColor;
+    position: absolute;
+    top: 9px;
+    left: 11px;
+} 

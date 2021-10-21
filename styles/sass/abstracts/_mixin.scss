@@ -1,0 +1,20 @@
+@mixin fontStyle($fontSize, $lineHeight, $letterSpacing) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
+
+@mixin backgroundImageStyle($backgroundImageURL, $backgroundVH) {
+    background-image: url($backgroundImageURL);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: $backgroundVH;
+}
+
+@mixin buttonStyle($buttonText, $buttonColor) {
+    color: $buttonText;
+    background-color: $buttonColor;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+}

@@ -1,0 +1,29 @@
+@import '../layout/header';
+
+header {
+    @include backgroundImageStyle('../assets/home-1.jpeg', 90vh);
+}
+
+.foodSection, .menu {
+    display: flex;
+}
+
+.foodSection > div, .menu > div {
+    width: 50%;
+}
+
+.mostPopularRecipes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.mostPopularRecipes > div {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    // justify-content: center;
+    // align-items: center;
+    border: 1px solid blue;
+}

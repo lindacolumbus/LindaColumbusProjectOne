@@ -1,0 +1,53 @@
+h1, p, a {
+    color: $mainTextColor;
+}
+
+footer h3, footer a {
+    color: $accentTextColor;
+}
+
+h4, button a, footer i {
+    color: $darkThemeTextAccent;
+}
+
+h1, h2, h3, h4, nav li, button a, span {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+p, blockquote {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    @include fontStyle(4.6rem, 24px, 1.1px)
+}
+
+h2, blockquote {
+    @include fontStyle(2.4rem, 36px, 0.6px)
+}
+
+h2 {
+    letter-spacing: 3px;
+}
+
+nav li, p {
+    @include fontStyle(1.8rem, 36px, 0.5px)
+}
+
+footer h3, h4 {
+    @include fontStyle(1.8rem, 24px, 0.5px)
+}
+
+a {
+    text-decoration: none;
+}
+
+button a {
+    font-size: 1.8rem;
+}
+
+footer p {
+    color: $darkThemeText;
+    @include fontStyle(1.3rem, 44px, 0.3px)
+}

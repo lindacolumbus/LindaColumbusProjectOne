@@ -1,25 +1,20 @@
-@import 'variables';
-@import 'normalize';
-@import 'generalStyles';
-@import 'fontStyles';
+@import 'abstracts/variables';
+@import 'abstracts/mixin';
 
+@import 'base/normalize';
+@import 'base/generalStyles';
+@import 'base/fontStyles';
+
+@import 'pages/home';
 
 .testimonials {
     background-color: $accentColor;
 }
 
+button {
+    @include buttonStyle($darkThemeTextAccent, $buttonColor);
+}
+
 footer {
     background-color: $darkThemeColor;
 }
-
-// EXAMPLE OF MIXIN
-// @mixin buttonStyle($buttonColor: $mainColor) {
-//     text-decoration: none;
-//     color: black;
-//     padding: 10px 20px;
-//     background-color: $buttonColor;
-// }
-
-// .button {
-//     @include buttonStyle(papayawhip);
-// }

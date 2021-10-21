@@ -249,8 +249,34 @@ img {
   display: block;
 }
 
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 75%;
+  max-width: 1000px;
+}
+
 h1, p, a {
   color: #2E2E2E;
+}
+
+footer h3, footer a {
+  color: #64a604;
+}
+
+h4, button a, footer i {
+  color: #F6F6F6;
+}
+
+h1, h2, h3, h4, nav li, button a, span {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+p, blockquote {
+  font-family: 'Lora', serif;
 }
 
 h1 {
@@ -259,42 +285,34 @@ h1 {
   letter-spacing: 1.1px;
 }
 
-h1, h2, h3, h4, nav li, button a {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-}
-
-h2, nav li, p {
-  font-size: 1.8rem;
-  line-height: 36px;
-  letter-spacing: 0.5px;
-}
-
-h3, button a {
-  font-size: 1.8rem;
-}
-
-p, blockquote {
-  font-family: 'Lora', serif;
-}
-
-blockquote {
+h2, blockquote {
   font-size: 2.4rem;
   line-height: 36px;
   letter-spacing: 0.6px;
 }
 
+h2 {
+  letter-spacing: 3px;
+}
+
+nav li, p {
+  font-size: 1.8rem;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
 footer h3, h4 {
+  font-size: 1.8rem;
   line-height: 24px;
   letter-spacing: 0.5px;
 }
 
-footer h3, footer a {
-  color: #64a604;
+a {
+  text-decoration: none;
 }
 
-h4, button, button a, footer i {
-  color: #F6F6F6;
+button a {
+  font-size: 1.8rem;
 }
 
 footer p {
@@ -304,12 +322,96 @@ footer p {
   letter-spacing: 0.3px;
 }
 
-a {
-  text-decoration: none;
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+nav .home {
+  color: #64a604;
+}
+
+.fa-shopping-bag {
+  position: relative;
+}
+
+.fa-shopping-bag::after {
+  content: '2';
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #F6F6F6;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #64a604;
+  position: absolute;
+  top: 9px;
+  left: 11px;
+}
+
+header {
+  background-image: url("../assets/home-1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.foodSection, .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.foodSection > div, .menu > div {
+  width: 50%;
+}
+
+.mostPopularRecipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.mostPopularRecipes > div {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid blue;
 }
 
 .testimonials {
   background-color: #dded9a;
+}
+
+button {
+  color: #F6F6F6;
+  background-color: #64a604;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
 }
 
 footer {
