@@ -1,0 +1,36 @@
+.footerInfo {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.75fr;
+    gap: 120px;
+    margin: 100px 0;
+        ul {
+            margin-top: 20px;
+        };
+        li {
+            border-bottom: 0.5px solid $footerBorderColor;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        };
+        li:last-child {
+            border: none
+        }
+}
+
+footer {
+    input {
+        height: 30px;
+        width: 85%;
+        margin: 20px 0;
+        };
+    button {
+      width: 15%;
+        padding: 9px 0;  
+    };
+    .socialIcons {
+        i {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-right: 15px;
+        }
+    }
+}

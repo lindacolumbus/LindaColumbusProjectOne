@@ -1,29 +1,140 @@
 @import '../layout/header';
+@import '../layout/footer';
 
 header {
     @include backgroundImageStyle('../assets/home-1.jpeg', 90vh);
 }
 
-.foodSection, .menu {
-    display: flex;
-}
-
-.foodSection > div, .menu > div {
-    width: 50%;
+// Food Feature Section
+.foodSection, .menu, .menuItems {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .mostPopularRecipes {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    border: 1px solid red;
+        div {
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                p {
+                    margin: 50px;
+                }
+        }
 }
 
-.mostPopularRecipes > div {
+.menu {
+    background-color: $menuBackgroundColor;
+}
+
+.menuItems {
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    width: 75%;
+    margin: 100px auto;
+}
+
+// Our Restaurants
+.restaurants {
+    margin: 200px 0 150px 0;
+        div:nth-child(1) img {
+            margin: 0 auto;
+        };
+        div:nth-child(1) {
+            position: relative;
+        }
+}
+
+.restaurantsText {
     width: 70%;
-    height: 100%;
     margin: 0 auto;
-    // justify-content: center;
-    // align-items: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 75px;
+        h2 {
+            margin-bottom: 50px;
+        }
+}
+
+.logo {
+    position: absolute;
+    top: -39%;
+    right: 16%;
+}
+
+// Image grid
+.imageGallery {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+// Hungry Clients
+.testimonials {
+    padding: 200px 0 150px 0;
+    text-align: center;
+}
+
+blockquote {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+blockquote i,
+.fa-angle-left {
+    color: $menuBackgroundColor;
+}
+
+.fa-angle-right {
+    color: $darkThemeTextAccent;
+}
+
+.fa-quote-left, .fa-quote-right {
+    font-size: 4.5rem;
+    position: absolute;
+}
+
+.fa-quote-left {
+    top: -17%;
+    left: -9%;
+}
+
+.fa-quote-right {
+    bottom: -9%;
+    right: -9%;
+}
+
+.fa-angle-left, .fa-angle-right {
+    font-size: 3rem;
+    padding-right: 30px;
+}
+
+// Green bar positioning
+.mostPopularRecipes > div > h2,
+.restaurantsText h2,
+.testimonials h2 {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.mostPopularRecipes > div > h2::after,
+.restaurants div:nth-child(2) h2::after,
+.testimonials h2::after {
+    content: '';
+    width: 70px;
+    height: 3px;
+    background-color: $accentTextColor;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35px;
+}
+
+.wrapper {
     border: 1px solid blue;
 }
