@@ -19,6 +19,10 @@ h1, h2, h3, h4, nav li, button a, span {
     text-transform: uppercase;
 }
 
+.copyright p {
+    font-family: 'Raleway', sans-serif;
+}
+
 p, blockquote, footer input::placeholder {
     font-family: 'Lora', serif;
 }
@@ -27,7 +31,7 @@ h1 {
     @include fontStyle(4.6rem, 24px, 1.1px)
 }
 
-h2, blockquote, .contactInfo h3 {
+h2, .contactInfo h3 {
     @include fontStyle(2.4rem, 36px, 0.6px)
 }
 
@@ -35,20 +39,24 @@ h2 {
     letter-spacing: 3px;
 }
 
-h3 {
+h3, blockquote p {
     font-size: 1.8rem;
 }
 
 nav li {
-    @include fontStyle(1.8rem, 36px, 0.5px)
+    @include fontStyle(1.6rem, 36px, 0.5px)
 }
 
-footer h3, h4 {
+h4 {
     @include fontStyle(1.8rem, 24px, 0.5px)
 }
 
+footer h3 {
+    font-size: 3rem;
+}
+
 p, button a, .footerInfo h4 {
-    @include fontStyle(1.5rem, 27px, 0.5px)
+    @include fontStyle(1.3rem, 27px, 0.5px)
 }
 
 a {
@@ -57,6 +65,7 @@ a {
 
 blockquote {
     font-style: italic;
+    font-size: 2rem;
 }
 
 footer p, footer input::placeholder {

@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 2fr 2fr 1.75fr;
     gap: 120px;
-    margin: 100px 0;
+    padding: 100px 0;
         ul {
             margin-top: 20px;
         };
@@ -35,10 +35,12 @@ footer {
         }
     };
     .copyright {
-        background-color: $darkThemeColor;
+        background-color: $copyrightFooter;
+        padding: 10px 0;
+        width: 100%;
     }
 }
 
-// input[type="text"]::placeholder {
-//     padding-left: 10px;
-// }
+.copyrightwrap {
+    background-color: $copyrightFooter;
+}
