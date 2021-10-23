@@ -19,7 +19,7 @@ h1, h2, h3, h4, nav li, button a, span {
     text-transform: uppercase;
 }
 
-p, blockquote{
+p, blockquote, footer input::placeholder {
     font-family: 'Lora', serif;
 }
 
@@ -59,7 +59,11 @@ blockquote {
     font-style: italic;
 }
 
-footer p {
+footer p, footer input::placeholder {
     color: $darkThemeText;
     @include fontStyle(1.1rem, 21px, 0.3px)
+}
+
+footer input::placeholder {
+    font-style: italic;
 }
