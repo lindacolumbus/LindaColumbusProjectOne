@@ -1,3 +1,4 @@
+// Font Colors
 h1, p, a {
     color: $mainTextColor;
 }
@@ -14,12 +15,14 @@ h4, button a, footer i {
     color: $darkThemeText;
 }
 
+// Font Families
 h1, h2, h3, h4, nav li, button a, span {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
-.copyright p {
+.copyright p, .caption, span {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -27,6 +30,7 @@ p, blockquote, footer input::placeholder {
     font-family: 'Lora', serif;
 }
 
+// General Font Styles
 h1 {
     @include fontStyle(4.6rem, 24px, 1.1px)
 }
@@ -63,11 +67,6 @@ a {
     text-decoration: none;
 }
 
-blockquote {
-    font-style: italic;
-    font-size: 2rem;
-}
-
 footer p, footer input::placeholder {
     color: $darkThemeText;
     @include fontStyle(1.1rem, 21px, 0.3px)
@@ -75,4 +74,53 @@ footer p, footer input::placeholder {
 
 footer input::placeholder {
     font-style: italic;
+}
+
+// Home Page Font Styles
+blockquote {
+    font-style: italic;
+    font-size: 2rem;
+}
+
+// Blog Page Font Styles
+.featureBlogPost h2 {
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+}
+
+.caption {
+    font-size: 1.1rem;
+}
+
+.blog {
+    h3, h4 {
+        font-size: 1.4rem;
+    }
+    h4 {
+    color: $mainTextColor;
+    };
+}
+
+.tags {
+    p, i {
+        color: $darkThemeText;
+    }
+}
+
+.relatedPosts {
+    h4 {
+    font-size: 1.6rem;
+    };
+    p.caption {
+        font-family: 'Lora', serif;
+        color: $darkThemeText;
+    };
+    a {
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+span .commentAuthor {
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
 }

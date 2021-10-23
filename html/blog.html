@@ -8,14 +8,14 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap"
         rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0a6ac50f2d.js" crossorigin="anonymous"></script>
     <title>Delicious Blog</title>
 </head>
 <body>
-    <header>
+    <header class="blogHeader">
         <nav>
             <div>
                 <h1>Delicious</h1>
@@ -35,9 +35,9 @@
     </header>
 
     <main>
-        <div class="wrapper">
+        <div class="wrapperBlog">
             <!-- Feature Blog Post -->
-            <section class="featureBlogPost">
+            <section class="blog featureBlogPost">
                 <h2>Pineapple Chicken</h2>
                 <p class="caption">Posted at July 11, 2018 | by Admin | in Recipes</p>
                 <div>
@@ -49,19 +49,23 @@
                     <p>Nori grape silver beet broccoli kombu beet greens fava bean potato wuandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama
                     salsify.</p>
                 </div>
+            </section>
+            <section class="blog tags">
                 <div>
                     <h4>Tags:</h4>
                     <p>Recipes, Chicken, Pineapple, Mexican</p>
-                    <h4>Share:</h4> 
+                </div>
+                <div>
+                <h4>Share:</h4> 
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-instagram"></i>
-                </div>      
-            </section>
+                </div>
+            </section>      
             <!-- Sally Lucas -->
-            <section class="author">
+            <section class="blog author">
                 <div>
-                    <img src="/assets/blog-2.jpeg" alt="Photo of Sally Lucas with long blonde curls">
+                    <img src="../assets/blog-2.jpeg" alt="Photo of Sally Lucas with long blonde curls">
                 </div>
                 <div>
                     <h4>Sally Lucas</h4>
@@ -70,58 +74,62 @@
                 </div>
             </section>
             <!-- Related Posts -->
-            <section class="relatedPosts">
-                <h4>Related Posts</h4>
-                <article>
-                    <div>
-                        <img src="../assets/blog-3.jpeg" alt="Person holding a tray with a pink layered cake with flower topping">
-                    </div>
-                    <div>
-                        <h3>How to Bake the Perfect Cake</h3>
-                        <p>July 11, 2018 | by <a href="#">Admin</a> | in <a href="#">Recipes</a></p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <img src="../assets/blog-4.jpeg" alt="Three meticulously decorated cupcakes in gold wrappers with floral and fruit toppings">
-                    </div>
-                    <div>
-                        <h3>Floral Cupcakes</h3>
-                        <p>July 19, 2018 | by <a href="#">Admin</a> | in <a href="#">Recipes</a></p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <img src="../assets/blog-5.jpeg" alt="Appetizer with colourful, fresh vegetables and herbs atop a floral vintage dish">
-                    </div>
-                    <div>
-                        <h3>Single Post with Image</h3>
-                        <p>July 22, 2018 | by <a href="#">Admin</a> | in <a href="#">Recipes</a></p>
-                    </div>
-                </article>
+            <section class="blog relatedPosts">
+                <h3>Related Posts</h3>
+                <div class="relatedPostsGrid">
+                    <article>
+                        <div>
+                            <img src="../assets/blog-3.jpeg" alt="Person holding a tray with a pink layered cake with flower topping">
+                        </div>
+                        <div>
+                            <h4>How to Bake the Perfect Cake</h4>
+                            <p class="caption">July 11, 2018 | by <a href="#">Admin</a> | in <a href="#">Recipes</a></p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="../assets/blog-4.jpeg" alt="Three meticulously decorated cupcakes in gold wrappers with floral and fruit toppings">
+                        </div>
+                        <div>
+                            <h4>Floral Cupcakes</h4>
+                            <p class="caption">July 19, 2018 | by <a href="#">Admin</a> | in <a href="#">Recipes</a></p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="../assets/blog-5.jpeg" alt="Appetizer with colourful, fresh vegetables and herbs atop a floral vintage dish">
+                        </div>
+                        <div>
+                            <h4>Single Post with Image</h4>
+                            <p class="caption">July 22, 2018 | by <a href="#">Admin</a> | in <a href="#">Recipes</a></p>
+                        </div>
+                    </article>
+                </div>
             </section>
             <!-- Comments -->
-            <section class="comments">
-                <h4>02 Comments</h4>
-                <div>
-                    <img src="../assets/blog-6.jpeg" alt="Portrait of a friendly older woman">
-                </div>
-                <div>
-                    <p><span>Lucatony Avaro</span> - Web Developer</p>
-                    <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle see collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard</p>
-                    <p class="timeStamp">Jul 17, 2015 at 15 hours ago</p>
-                </div>
-                <div>
-                    <img src="../assets/blog-7.jpeg" alt="Portrait of woman wearing a black hat">
-                </div>
-                <div>
-                    <p><span>Brian Hudson</span> - Web Developer</p>
-                    <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigetnut jicama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut.</p>
-                    <p class="timeStamp">Jul 17, 2015 at 15 hours ago</p>
+            <section class="blog comments">
+                <h3>02 Comments</h3>
+                <div class="commentsGrid">
+                    <div>
+                        <img src="../assets/blog-6.jpeg" alt="Portrait of a friendly older woman">
+                    </div>
+                    <div class="commentsText">
+                        <p><span class="commentAuthor">Lucatony Avaro</span> - Web Developer</p>
+                        <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle see collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard</p>
+                        <p class="timeStamp">Jul 17, 2015 at 15 hours ago</p>
+                    </div>
+                    <div>
+                        <img src="../assets/blog-7.jpeg" alt="Portrait of woman wearing a black hat">
+                    </div>
+                    <div class="commentsText">
+                        <p><span class="commentAuthor">Brian Hudson</span> - Web Developer</p>
+                        <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigetnut jicama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut.</p>
+                        <p class="timeStamp">Jul 17, 2015 at 15 hours ago</p>
+                    </div>
                 </div>
             </section>
             <!-- Comment Form -->
-            <section class="form">
+            <section class="blog form">
                 <h4>Leave a Comment</h4>
                 <p>Your email address will not be published. Required fields are marked *</p>
                 <form action="#">

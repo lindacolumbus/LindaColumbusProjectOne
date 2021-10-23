@@ -1,6 +1,100 @@
 @import '../layout/header';
 @import '../layout/footer';
 
-header {
-    @include backgroundImageStyle('../assets/home-1.jpeg', 90vh);
+.wrapperBlog {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.blogHeader {
+    @include backgroundImageStyle('../assets/blog-1.jpeg', 65vh);
+    background-position: center;
+}
+
+section.blog {
+    border-bottom: 0.5px solid $footerBorderColor;
+}
+
+// Featured Blog Post
+.featureBlogPost {
+    margin-top: 150px;
+        div {
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 25px;
+        }
+}
+
+// Blog Post Tags
+.tags {
+    padding: 20px 0 20px 0;
+}
+
+.tags > div {
+    display: flex;
+        h4 {
+            margin-right: 10px;
+        }
+        i {
+            font-size: 1.3rem;
+            margin-right: 15px;
+        }
+}
+
+.tags div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+// Author
+.author {
+    @include gridStyle(1fr 4fr)
+}
+
+.author div:nth-child(2) {
+    background-color: $blogSectionColor;
+    padding: 35px;
+        h4 {
+            margin-bottom: 15px;
+        }
+}
+
+// Related Posts
+.relatedPostsGrid {
+    @include gridStyle(repeat(3, 1fr), $gridRows, 25px)
+}
+
+.relatedPosts {
+    article {
+        display: block;
+    }
+    h3 {
+        padding: 25px 0 25px 0;
+    }
+}
+
+.articleCaption {
+    display: flex;
+}
+
+.relatedPostsGrid div:nth-child(2) {
+    padding: 25px 0 25px 0;
+}
+
+// Comments
+
+.comments {
+    h3 {
+        padding: 25px 0 25px 0;
+    }
+}
+.commentsGrid {
+    @include gridStyle(1fr 18fr, 1fr 1fr, 25px)
+}
+.commentsText {
+    background-color: $blogSectionColor;
+    padding: 30px;
 }

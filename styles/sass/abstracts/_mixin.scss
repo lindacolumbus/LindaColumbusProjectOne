@@ -18,3 +18,10 @@
     border: none;
     padding: 10px 40px;
 }
+
+@mixin gridStyle($gridColumns, $gridRows, $gap) {
+    display: grid;
+    grid-template-columns: $gridColumns;
+    grid-template-rows: $gridRows;
+    gap: $gap;
+}
