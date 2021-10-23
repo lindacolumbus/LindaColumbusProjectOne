@@ -533,6 +533,26 @@ header {
   margin: 100px auto;
 }
 
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article i {
+  font-size: 3rem;
+}
+
+article h3 {
+  margin-bottom: 10px;
+}
+
+article div:first-child {
+  width: 50px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .restaurants {
   margin: 200px 0 150px 0;
 }

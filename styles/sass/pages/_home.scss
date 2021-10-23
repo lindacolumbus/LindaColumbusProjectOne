@@ -39,6 +39,21 @@ header {
     margin: 100px auto;
 }
 
+article {
+    display: flex;
+        i {
+            font-size: 3rem;
+        };
+        h3 {
+            margin-bottom: 10px;
+        }
+}
+
+article div:first-child {
+    width: 50px;
+    flex-shrink: 0;
+}
+
 // Our Restaurants
 .restaurants {
     margin: 200px 0 150px 0;
