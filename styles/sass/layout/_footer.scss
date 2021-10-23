@@ -17,28 +17,29 @@
 }
 
 footer {
-    input {
-        height: 30px;
-        width: 85%;
-        margin: 20px 0;
-        background-color: $inputColor;
+    background-color: $darkThemeColor;
+        input {
+            height: 30px;
+            width: 85%;
+            margin: 20px 0;
+            background-color: $inputColor;
+            };
+        button {
+        width: 15%;
+            padding: 9px 0;  
         };
-    button {
-      width: 15%;
-        padding: 9px 0;  
-    };
-    .socialIcons {
-        i {
-        font-size: 1.3rem;
-        margin-top: 10px;
-        margin-right: 15px;
+        .socialIcons {
+            i {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            margin-right: 15px;
+            }
+        };
+        .copyright {
+            background-color: $copyrightFooter;
+            padding: 10px 0;
+            width: 100%;
         }
-    };
-    .copyright {
-        background-color: $copyrightFooter;
-        padding: 10px 0;
-        width: 100%;
-    }
 }
 
 .copyrightwrap {

@@ -1,0 +1,6 @@
+@import '../layout/header';
+@import '../layout/footer';
+
+header {
+    @include backgroundImageStyle('../assets/home-1.jpeg', 90vh);
+}
