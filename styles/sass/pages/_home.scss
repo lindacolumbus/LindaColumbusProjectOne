@@ -6,8 +6,9 @@ header {
 }
 
 // Food Feature Section
-.foodSection, .menu {
-    @include gridStyle(1fr 1fr)
+.foodSection, .menu, .menuItems {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .mostPopularRecipes {
@@ -35,8 +36,9 @@ header {
 }
 
 .menuItems {
-    @include gridStyle(1fr 1fr, repeat(3, 1fr), 30px);
     grid-auto-flow: column;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
     width: 75%;
     margin: 100px auto;
 }
@@ -81,7 +83,9 @@ article {
 
 // Image grid
 .imageGallery {
-    @include gridStyle(repeat(3, 1fr), 1fr 1fr)
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 // Hungry Clients

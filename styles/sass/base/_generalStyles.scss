@@ -16,16 +16,12 @@ li {
     list-style: none;
 }
 
-input {
-    border: none;
-}
-
 button {
     @include buttonStyle($darkThemeTextAccent, $buttonColor);
 }
 
 .wrapper {
-    width: 75%;
-    max-width: 1000px;
+    width: 85%;
+    max-width: 1100px;
     margin: 0 auto;
 }

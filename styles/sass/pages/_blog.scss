@@ -1,12 +1,6 @@
 @import '../layout/header';
 @import '../layout/footer';
 
-.wrapperBlog {
-    width: 85%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
 .blogHeader {
     @include backgroundImageStyle('../assets/blog-1.jpeg', 65vh);
     background-position: center;
@@ -51,7 +45,9 @@ section.blog {
 
 // Author
 .author {
-    @include gridStyle(1fr 4fr)
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 50px 0 50px 0;
 }
 
 .author div:nth-child(2) {
@@ -64,7 +60,9 @@ section.blog {
 
 // Related Posts
 .relatedPostsGrid {
-    @include gridStyle(repeat(3, 1fr), $gridRows, 25px)
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
 }
 
 .relatedPosts {
@@ -86,15 +84,64 @@ section.blog {
 
 // Comments
 
+.blog.comments {
+    margin-bottom: 40px;
+    border-bottom: none;
+}
+
 .comments {
     h3 {
         padding: 25px 0 25px 0;
     }
 }
 .commentsGrid {
-    @include gridStyle(1fr 18fr, 1fr 1fr, 25px)
+    display: grid;
+    grid-template-columns: 1fr 18fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
 }
-.commentsText {
+.commentsGrid div:nth-child(2),
+.commentsGrid div:nth-child(4) {
     background-color: $blogSectionColor;
-    padding: 30px;
+}
+
+.commentsText {
+    padding: 15px;
+    position: relative;
+        i {
+            font-size: 2rem;
+            color: $blogSectionColor;
+            position: absolute;
+            top: 10px;
+            left: -7px;
+        }
+}
+
+// Comment Form
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin: 20px 0 150px 0;
+        input {
+            height: 40px;
+            margin-bottom: 15px;
+        };
+        input, textarea {
+            border: 0.5px solid $blogSectionColor;
+            padding: 10px;
+        };
+        textarea {
+            width: 100%;
+            resize: none;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: calc(300% + 60px);
+                button {
+                    margin-top: 15px;
+                }
+        }
 }
