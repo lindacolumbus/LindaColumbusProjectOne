@@ -501,7 +501,7 @@ nav ul {
       flex-basis: 55%;
 }
 
-nav .home, nav .blog {
+nav .home, nav .blog, nav .contact {
   color: #64a604;
 }
 
@@ -777,7 +777,7 @@ nav ul {
       flex-basis: 55%;
 }
 
-nav .home, nav .blog {
+nav .home, nav .blog, nav .contact {
   color: #64a604;
 }
 
