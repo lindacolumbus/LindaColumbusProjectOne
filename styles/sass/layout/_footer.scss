@@ -47,3 +47,53 @@ footer {
 .copyrightwrap {
     background-color: $copyrightFooter;
 }
+
+// Media Queries
+
+@media (max-width: 875px) {
+
+    footer {
+        p {
+            font-size: 1.4rem;
+        };
+        .wrapper {
+        display: flex;
+        justify-content: center;
+        };
+    }       
+
+    .footerInfo {
+        gap: 0;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 0 50px 0;
+        h4 {
+            font-size: 1.8rem;
+        }
+    };
+
+    .footerInfo > div {
+        margin-bottom: 50px;
+    };
+
+    .subscribe {
+        input {
+            width: 50%;
+        };
+        .socialIcons i {
+            font-size: 2rem;
+            margin-right: 30px;
+        }
+    }
+};
+
+@media (max-width: 480px) {
+    // .subscribe {
+    //     input {
+    //         display: block;
+    //     }
+    // }
+    // Stack subscribe field and button
+}
