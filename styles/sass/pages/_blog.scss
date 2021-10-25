@@ -118,7 +118,7 @@ section.blog {
 }
 
 // Comment Form
-form {
+.blogForm {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;

@@ -148,3 +148,22 @@ blockquote {
         padding: 15px 30px;
     }
 }
+
+// Contact Page Font Styles
+
+.mainContact h2 {
+        letter-spacing: 1px;
+};
+
+.contactForm {
+    input::placeholder,
+    textarea::placeholder {
+        font-family: 'Lora', serif;
+    }
+    button {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5rem;
+        color: $accentTextColor;
+        text-transform: uppercase;
+    }
+}

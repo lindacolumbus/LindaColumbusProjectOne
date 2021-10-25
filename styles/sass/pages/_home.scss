@@ -28,7 +28,7 @@ header {
 }
 
 .menu {
-    background-color: $menuBackgroundColor;
+    background-color: $asideBackgroundColor;
         article div:first-child {
         width: 50px;
         flex-shrink: 0;
@@ -102,7 +102,7 @@ blockquote {
 
 blockquote i,
 .fa-angle-left {
-    color: $menuBackgroundColor;
+    color: $asideBackgroundColor;
 }
 
 .fa-angle-right {

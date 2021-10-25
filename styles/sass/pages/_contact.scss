@@ -1,0 +1,82 @@
+@import '../layout/header';
+@import '../layout/footer';
+
+.contactHeader {
+    @include backgroundImageStyle('../assets/contact-1.jpeg', 65vh);
+    background-position: center;
+}
+
+.mainContact {
+    display: flex;
+}
+
+.contactSection {
+    width: 85%;
+    margin: 100px 0;
+    .contactForm {
+        width: 70%;
+        margin-left: 30%;
+        padding-right: 25px;
+    };
+    h2 {
+        margin-bottom: 35px;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content auto;
+        gap: 20px;
+            input {
+                height: 40px;
+            }
+            input, textarea {
+                padding: 10px;
+                border: none;
+                background-color: $asideBackgroundColor;
+            }
+            #subject, #message {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            #message {
+                resize: none;
+            }
+            button {
+                margin: 0;
+                padding: 20px 0 0 0;
+                background-color: white;
+            }
+            i {
+                color: $accentTextColor;
+                font-size: 1.5rem;
+                padding-left: 5px;
+            }
+    }
+}
+
+.contactDetails {
+    background-color: $asideBackgroundColor;
+    div {
+        margin: 100px 0 65px 30px;
+        width: 50%;
+    }
+}
+
+.contactDetailsText h2,
+.contactDetailsText p:nth-child(2),
+.hoursNote {
+    margin-bottom: 60px;
+}
+
+.contactDetailsText h3 {
+    margin-bottom: 20px;
+}
+
+.contactDetailsText li p:nth-child(2),
+.contactDetailsText ul li:nth-child(2) {
+    margin-bottom: 35px;
+}
+
+.hoursNote {
+    font-style: italic;
+}
