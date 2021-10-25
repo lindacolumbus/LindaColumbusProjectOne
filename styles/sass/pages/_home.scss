@@ -13,26 +13,26 @@ header {
 
 .mostPopularRecipes {
     text-align: center;
-        div {
-            width: 72%;
-            height: 100%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-                p {
-                    margin: 50px;
-                }
-        }
+    div {
+        width: 72%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            p {
+                margin: 50px;
+            }
+    }
 }
 
 .menu {
     background-color: $asideBackgroundColor;
-        article div:first-child {
-        width: 50px;
-        flex-shrink: 0;
-        }
+    article div:first-child {
+    width: 50px;
+    flex-shrink: 0;
+    }
 }
 
 .menuItems {
@@ -45,23 +45,23 @@ header {
 
 article {
     display: flex;
-        i {
-            font-size: 3rem;
-        };
-        h3 {
-            margin-bottom: 10px;
-        }
+    i {
+        font-size: 3rem;
+    };
+    h3 {
+        margin-bottom: 10px;
+    }
 }
 
 // Our Restaurants
 .restaurants {
     margin: 200px 0 150px 0;
-        div:nth-child(1) img {
-            margin: 0 auto;
-        };
-        div:nth-child(1) {
-            position: relative;
-        }
+    div:nth-child(1) img {
+        margin: 0 auto;
+    };
+    div:nth-child(1) {
+        position: relative;
+    }
 }
 
 .restaurantsText {
@@ -70,9 +70,9 @@ article {
     text-align: center;
     align-items: center;
     margin-top: 75px;
-        h2 {
-            margin-bottom: 50px;
-        }
+    h2 {
+        margin-bottom: 50px;
+    }
 }
 
 .logo {
@@ -149,3 +149,13 @@ blockquote i,
     left: 50%;
     margin-left: -35px;
 }
+
+// Media queries
+
+// @media (max-width: 1200px) {
+//     nav {
+//         ul {
+//             flex-basis: 75%;
+//         }
+//     }
+// }

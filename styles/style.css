@@ -355,6 +355,11 @@ a {
   text-decoration: none;
 }
 
+blockquote {
+  font-style: italic;
+  font-size: 2rem;
+}
+
 footer p, footer input::-webkit-input-placeholder {
   color: #999999;
   font-size: 1.1rem;
@@ -397,11 +402,6 @@ footer input::-ms-input-placeholder {
 
 footer input::placeholder {
   font-style: italic;
-}
-
-blockquote {
-  font-style: italic;
-  font-size: 2rem;
 }
 
 .featureBlogPost h2 {
@@ -553,6 +553,58 @@ nav .home, nav .blog, nav .contact {
   position: absolute;
   top: 9px;
   left: 11px;
+}
+
+.fa-bars {
+  visibility: hidden;
+  font-size: 5rem;
+  width: 100%;
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  nav ul {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav h1 {
+    font-size: 3rem;
+  }
+  nav ul {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+}
+
+@media (max-width: 890px) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    visibility: hidden;
+  }
+  nav h1 {
+    font-size: 4.6rem;
+  }
+  .fa-bars {
+    visibility: visible;
+    position: absolute;
+    top: 34px;
+    right: 40px;
+  }
+  header {
+    height: 65vh;
+    background-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 3rem;
+  }
 }
 
 .footerInfo {
@@ -829,6 +881,58 @@ nav .home, nav .blog, nav .contact {
   position: absolute;
   top: 9px;
   left: 11px;
+}
+
+.fa-bars {
+  visibility: hidden;
+  font-size: 5rem;
+  width: 100%;
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  nav ul {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav h1 {
+    font-size: 3rem;
+  }
+  nav ul {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+}
+
+@media (max-width: 890px) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    visibility: hidden;
+  }
+  nav h1 {
+    font-size: 4.6rem;
+  }
+  .fa-bars {
+    visibility: visible;
+    position: absolute;
+    top: 34px;
+    right: 40px;
+  }
+  header {
+    height: 65vh;
+    background-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 3rem;
+  }
 }
 
 .footerInfo {
@@ -1108,6 +1212,58 @@ nav .home, nav .blog, nav .contact {
   left: 11px;
 }
 
+.fa-bars {
+  visibility: hidden;
+  font-size: 5rem;
+  width: 100%;
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  nav ul {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav h1 {
+    font-size: 3rem;
+  }
+  nav ul {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+}
+
+@media (max-width: 890px) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    visibility: hidden;
+  }
+  nav h1 {
+    font-size: 4.6rem;
+  }
+  .fa-bars {
+    visibility: visible;
+    position: absolute;
+    top: 34px;
+    right: 40px;
+  }
+  header {
+    height: 65vh;
+    background-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 3rem;
+  }
+}
+
 .footerInfo {
   display: -ms-grid;
   display: grid;
@@ -1215,7 +1371,7 @@ footer .copyright {
   background-color: #f2f2f2;
 }
 
-.contactSection form #subject, .contactSection form #message {
+.contactSection form .subject, .contactSection form .message {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;

@@ -3,45 +3,45 @@
     grid-template-columns: 2fr 2fr 1.75fr;
     gap: 120px;
     padding: 100px 0;
-        ul {
-            margin-top: 20px;
-        };
-        li {
-            border-bottom: 0.5px solid $footerBorderColor;
-            padding-top: 5px;
-            padding-bottom: 5px;
-        };
-        li:last-child {
-            border: none
-        }
+    ul {
+        margin-top: 20px;
+    };
+    li {
+        border-bottom: 0.5px solid $footerBorderColor;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    };
+    li:last-child {
+        border: none
+    }
 }
 
 footer {
     background-color: $darkThemeColor;
-        input {
-            height: 30px;
-            width: 85%;
-            margin: 20px 0;
-            background-color: $inputColor;
-            border: none;
-            padding-left: 15px;
-            };
-        button {
-        width: 15%;
-            padding: 9px 0;  
+    input {
+        height: 30px;
+        width: 85%;
+        margin: 20px 0;
+        background-color: $inputColor;
+        border: none;
+        padding-left: 15px;
         };
-        .socialIcons {
-            i {
-            font-size: 1.3rem;
-            margin-top: 10px;
-            margin-right: 15px;
-            }
-        };
-        .copyright {
-            background-color: $copyrightFooter;
-            padding: 10px 0;
-            width: 100%;
+    button {
+    width: 15%;
+        padding: 9px 0;  
+    };
+    .socialIcons {
+        i {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-right: 15px;
         }
+    };
+    .copyright {
+        background-color: $copyrightFooter;
+        padding: 10px 0;
+        width: 100%;
+    }
 }
 
 .copyrightwrap {

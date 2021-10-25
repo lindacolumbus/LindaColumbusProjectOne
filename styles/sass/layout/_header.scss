@@ -2,15 +2,15 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 40px;
-        ul {
-            display: flex;
-            justify-content: space-between;
-            flex-basis: 55%;
-        }
-        .home, .blog, .contact {
-            color: $accentTextColor;
-        }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 55%;
+    };
+    .home, .blog, .contact {
+        color: $accentTextColor;
     }
+}
 
 .fa-shopping-bag {
     position: relative;
@@ -30,3 +30,63 @@ nav {
     top: 9px;
     left: 11px;
 } 
+
+.fa-bars {
+    visibility: hidden;
+    font-size: 5rem;
+    width: 100%;
+    text-align: right;
+}
+
+// Media queries
+
+@media (max-width: 1200px) {
+    nav {
+        ul {
+            flex-basis: 65%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    nav {
+        h1 {
+            font-size: 3rem;
+        }
+        ul {
+            flex-basis: 75%;
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    nav {
+        position: relative;
+        ul {
+            visibility: hidden;
+        };
+        h1 {
+            font-size: 4.6rem;
+        }
+    };
+
+    .fa-bars {
+        visibility: visible;
+        position: absolute;
+        top: 34px;
+        right: 40px;
+    };
+
+    header {
+        height: 65vh;
+        background-position: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        h1 {
+            font-size: 3rem;
+        }
+    };
+}

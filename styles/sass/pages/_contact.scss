@@ -10,6 +10,7 @@
     display: flex;
 }
 
+// Drop us a Line
 .contactSection {
     width: 85%;
     margin: 100px 0;
@@ -34,7 +35,7 @@
                 border: none;
                 background-color: $asideBackgroundColor;
             }
-            #subject, #message {
+            .subject, .message {
                 grid-column-start: 1;
                 grid-column-end: 3;
             }
@@ -54,6 +55,7 @@
     }
 }
 
+// Contact Details
 .contactDetails {
     background-color: $asideBackgroundColor;
     div {

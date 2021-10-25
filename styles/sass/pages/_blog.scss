@@ -13,12 +13,12 @@ section.blog {
 // Featured Blog Post
 .featureBlogPost {
     margin-top: 150px;
-        div {
-            margin-top: 30px;
-        }
-        p {
-            margin-bottom: 25px;
-        }
+    div {
+        margin-top: 30px;
+    }
+    p {
+        margin-bottom: 25px;
+    }
 }
 
 // Blog Post Tags
@@ -28,13 +28,13 @@ section.blog {
 
 .tags > div {
     display: flex;
-        h4 {
-            margin-right: 10px;
-        }
-        i {
-            font-size: 1.3rem;
-            margin-right: 15px;
-        }
+    h4 {
+        margin-right: 10px;
+    }
+    i {
+        font-size: 1.3rem;
+        margin-right: 15px;
+    }
 }
 
 .tags div:nth-child(2) {
@@ -53,9 +53,9 @@ section.blog {
 .author div:nth-child(2) {
     background-color: $blogSectionColor;
     padding: 35px;
-        h4 {
-            margin-bottom: 15px;
-        }
+    h4 {
+        margin-bottom: 15px;
+    }
 }
 
 // Related Posts
@@ -108,13 +108,13 @@ section.blog {
 .commentsText {
     padding: 15px;
     position: relative;
-        i {
-            font-size: 2rem;
-            color: $blogSectionColor;
-            position: absolute;
-            top: 10px;
-            left: -7px;
-        }
+    i {
+        font-size: 2rem;
+        color: $blogSectionColor;
+        position: absolute;
+        top: 10px;
+        left: -7px;
+    }
 }
 
 // Comment Form
@@ -123,25 +123,25 @@ section.blog {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     margin: 20px 0 150px 0;
-        input {
-            height: 40px;
-            margin-bottom: 15px;
-        };
-        input, textarea {
-            border: 0.5px solid $blogSectionColor;
-            padding: 10px;
-        };
-        textarea {
-            width: 100%;
-            resize: none;
-        }
-        div {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: calc(300% + 60px);
-                button {
-                    margin-top: 15px;
-                }
-        }
+    input {
+        height: 40px;
+        margin-bottom: 15px;
+    };
+    input, textarea {
+        border: 0.5px solid $blogSectionColor;
+        padding: 10px;
+    };
+    textarea {
+        width: 100%;
+        resize: none;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: calc(300% + 60px);
+            button {
+                margin-top: 15px;
+            }
+    }
 }
