@@ -237,7 +237,6 @@ html {
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body, h1, h2, h3, h4, p, nav, ul, li, button {
@@ -556,8 +555,8 @@ nav .home, nav .blog, nav .contact {
   left: 11px;
 }
 
-.fa-bars {
-  visibility: hidden;
+.fa.fa-bars {
+  display: none;
   font-size: 5rem;
   width: 100%;
   text-align: right;
@@ -585,13 +584,13 @@ nav .home, nav .blog, nav .contact {
     position: relative;
   }
   nav ul {
-    visibility: hidden;
+    display: none;
   }
   nav h1 {
     font-size: 4.6rem;
   }
-  .fa-bars {
-    visibility: visible;
+  .fa.fa-bars {
+    display: block;
     position: absolute;
     top: 34px;
     right: 40px;
@@ -945,7 +944,7 @@ blockquote i,
     position: absolute;
     width: 50%;
     top: -400px;
-    left: 500px;
+    left: 470px;
   }
   .menuItems {
     padding: 100px 0;
@@ -1091,8 +1090,8 @@ nav .home, nav .blog, nav .contact {
   left: 11px;
 }
 
-.fa-bars {
-  visibility: hidden;
+.fa.fa-bars {
+  display: none;
   font-size: 5rem;
   width: 100%;
   text-align: right;
@@ -1120,13 +1119,13 @@ nav .home, nav .blog, nav .contact {
     position: relative;
   }
   nav ul {
-    visibility: hidden;
+    display: none;
   }
   nav h1 {
     font-size: 4.6rem;
   }
-  .fa-bars {
-    visibility: visible;
+  .fa.fa-bars {
+    display: block;
     position: absolute;
     top: 34px;
     right: 40px;
@@ -1459,6 +1458,85 @@ section.blog {
   margin-top: 15px;
 }
 
+@media (max-width: 940px) {
+  .featureBlogPost {
+    padding-top: 50px;
+    margin-top: 0;
+  }
+  .blog h3, .form h4 {
+    font-size: 2rem;
+  }
+  .author {
+    display: block;
+    padding-top: 30px;
+  }
+  .author div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .relatedPostsGrid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .commentsGrid {
+    -ms-grid-columns: 1fr 10fr;
+        grid-template-columns: 1fr 10fr;
+  }
+  .blogForm {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+  .blogForm div {
+    width: 100%;
+  }
+  .blogForm input::-webkit-input-placeholder,
+  .blogForm textarea::-webkit-input-placeholder {
+    font-size: 1.3rem;
+  }
+  .blogForm input:-ms-input-placeholder,
+  .blogForm textarea:-ms-input-placeholder {
+    font-size: 1.3rem;
+  }
+  .blogForm input::-ms-input-placeholder,
+  .blogForm textarea::-ms-input-placeholder {
+    font-size: 1.3rem;
+  }
+  .blogForm input::placeholder,
+  .blogForm textarea::placeholder {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .caption {
+    font-size: 1.4rem;
+  }
+  .relatedPostsGrid {
+    display: block;
+  }
+  .relatedPostsGrid article div:nth-child(odd) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .relatedPostsGrid article div:nth-child(even) {
+    text-align: center;
+  }
+  .commentsGrid {
+    -ms-grid-columns: 1fr 5fr;
+        grid-template-columns: 1fr 5fr;
+  }
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1503,8 +1581,8 @@ nav .home, nav .blog, nav .contact {
   left: 11px;
 }
 
-.fa-bars {
-  visibility: hidden;
+.fa.fa-bars {
+  display: none;
   font-size: 5rem;
   width: 100%;
   text-align: right;
@@ -1532,13 +1610,13 @@ nav .home, nav .blog, nav .contact {
     position: relative;
   }
   nav ul {
-    visibility: hidden;
+    display: none;
   }
   nav h1 {
     font-size: 4.6rem;
   }
-  .fa-bars {
-    visibility: visible;
+  .fa.fa-bars {
+    display: block;
     position: absolute;
     top: 34px;
     right: 40px;

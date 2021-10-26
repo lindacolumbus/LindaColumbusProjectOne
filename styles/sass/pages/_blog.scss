@@ -134,7 +134,7 @@ section.blog {
     textarea {
         width: 100%;
         resize: none;
-    }
+    };
     div {
         display: flex;
         flex-direction: column;
@@ -143,5 +143,69 @@ section.blog {
             button {
                 margin-top: 15px;
             }
+    }
+}
+
+// Media queries
+
+@media (max-width: 940px) {
+    .featureBlogPost {
+        padding-top: 50px;
+        margin-top: 0;
+    };
+
+    .blog h3, .form h4 {
+        font-size: 2rem;
+    };
+
+    .author {
+        display: block;
+        padding-top: 30px;
+        div:first-child {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    };
+
+    .relatedPostsGrid {
+        grid-template-columns: 1fr 1fr;
+    };
+
+    .commentsGrid {
+        grid-template-columns: 1fr 10fr;
+    };
+
+    .blogForm {
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+        div {
+            width: 100%;
+        };
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 1.3rem;
+        }
+    };
+}
+
+@media (max-width: 600px) {
+    .caption {
+        font-size: 1.4rem;
+    }
+
+    .relatedPostsGrid {
+        display: block;
+        article div:nth-child(odd) {
+            display: flex;
+            justify-content: center;
+        }
+        article div:nth-child(even) {
+            text-align: center;
+        }
+    }
+
+    .commentsGrid {
+        grid-template-columns: 1fr 5fr;
     }
 }

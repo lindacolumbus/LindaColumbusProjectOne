@@ -31,8 +31,9 @@ nav {
     left: 11px;
 } 
 
-.fa-bars {
-    visibility: hidden;
+
+.fa.fa-bars {
+    display: none;
     font-size: 5rem;
     width: 100%;
     text-align: right;
@@ -63,15 +64,15 @@ nav {
     nav {
         position: relative;
         ul {
-            visibility: hidden;
+            display: none;
         };
         h1 {
             font-size: 4.6rem;
         }
     };
 
-    .fa-bars {
-        visibility: visible;
+    .fa.fa-bars {
+        display: block;
         position: absolute;
         top: 34px;
         right: 40px;
