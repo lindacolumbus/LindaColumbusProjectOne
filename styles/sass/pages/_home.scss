@@ -84,7 +84,7 @@ article {
 // Image grid
 .imageGallery {
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -152,3 +152,153 @@ blockquote i,
 
 // Media queries
 
+@media (max-width: 1130px) {
+    .foodSection {
+        display: block;
+        position: relative;
+    }
+
+    .foodSection div:nth-child(2) {
+        width: 50%;
+        img {
+            padding-left: 50px;
+        }
+    }
+
+    .mostPopularRecipes {
+        margin: 50px;
+    }
+
+    .menu {
+        display: block;
+        position: relative
+    }
+
+    .menu div:first-child {
+        img {
+            position: absolute;
+            width: 50%;
+            top: -400px;
+            left: 500px;
+        }
+    }
+
+    .menuItems {
+        padding: 100px 0;
+    }
+
+    .restaurants {
+        margin: 100px 0;
+    }
+
+    .testimonials {
+        .wrapper {
+            width: 65%;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .foodSection div:nth-child(2) {
+        width: 100%;
+        img {
+            padding: 0;
+        };
+    };
+
+    .menu div:first-child img {
+        position: initial;
+        width: 100%;
+    }
+
+    .menuItems {
+        padding: 0 0 50px 0;
+    }
+
+    .logo {
+        width: 125px;
+        top: -25%;
+        right: 10%;
+    }
+
+    .testimonials {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .mostPopularRecipes {
+        div {
+            width: 100%;
+            p {
+                margin: 50px 0;
+            }
+        };
+    }
+
+    .menuItems {
+        display: block;
+        margin-top: 75px;
+        padding-bottom: 75px;
+        article {
+            margin-bottom: 50px;
+        }
+    }
+
+    .menuItems article:last-child {
+        margin: 0;
+    }
+
+    .restaurants {
+        margin: 50px 0 100px 0;
+        .restaurantsText {
+            width: 100%;
+        }
+    }
+
+    .imageGallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonials {
+        padding: 80px;
+        .wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .menuItems {
+        margin: 50px auto;
+        padding-bottom: 50px;
+    }
+
+    .restaurants {
+        margin: 45px 0;
+    }
+
+    .logo {
+        width: 100px;
+        top: -10%;
+        right: 10%;
+    }
+
+    .restaurantsText {
+        margin-top: 45px;
+    }
+
+    .testimonials {
+        padding: 50px;
+    }
+
+    .fa-quote-left {
+    top: -10%;
+    left: -20%;
+    }
+
+    .fa-quote-right {
+    bottom: -10%;
+    right: -20%;
+}
+}

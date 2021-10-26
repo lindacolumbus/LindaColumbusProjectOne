@@ -90,6 +90,20 @@ footer {
 };
 
 @media (max-width: 768px) {
+
+    .mostPopularRecipes {
+        p {
+           font-size: 1.6rem; 
+        }
+        a {
+        font-size: 1.8rem;
+        }
+    }
+
+    .restaurantsText p {
+        font-size: 1.6rem;
+    }
+
     .subscribe {
         input, button {
             width: 100%;
@@ -102,9 +116,13 @@ footer {
         input::placeholder {
             font-size: 1.5rem;
             text-align: center;
-        }
+        };
         button {
             font-size: 2rem;
+            margin-bottom: 20px;
+        };
+        .socialIcons {
+            margin-top: 15px;
         }
     }
 }
