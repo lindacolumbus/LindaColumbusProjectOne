@@ -82,3 +82,77 @@
 .hoursNote {
     font-style: italic;
 }
+
+// Media Queries
+
+@media (max-width: 1200px) {
+    .contactSection form {
+        input {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .contactSection {
+        width: 50%;
+        .contactForm {
+            width: 85%;
+            padding-right: 20%;
+        }
+        i {
+            display: none;
+        }
+    }
+
+    .contactDetails {
+        width: 50%;
+        div {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .contactSection {
+        display: flex;
+        justify-content: center;
+        .contactForm {
+            width: 100%;
+            padding: 0;
+            margin: 30px;
+            button {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .mainContact {
+        display: block;
+    };
+
+    .contactSection {
+        width: 80%;
+        margin: 50px 0 0 0;
+    }
+
+    .contactDetails {
+        width: 100%;
+    }
+
+    .contactDetails div {
+        margin: 50px 0 0 30px;
+        padding: 50px 0;
+    }
+
+    .contactForm form {
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 1.3rem;
+        }
+    };
+}
