@@ -1,6 +1,19 @@
 @import '../layout/header';
 @import '../layout/footer';
 
+// Skip to Content Nav
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+    .skipLink:focus {
+        left: 0;
+    }
+}
+
 .contactHeader {
     @include backgroundImageStyle('../assets/contact-1.jpeg', 65vh);
     background-position: center;

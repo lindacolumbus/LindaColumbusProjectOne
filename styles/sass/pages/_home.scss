@@ -1,13 +1,26 @@
 @import '../layout/header';
 @import '../layout/footer';
 
+// Skip to Content Nav
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+    .skipLink:focus {
+        left: 0;
+    }
+}
+
 header {
     @include backgroundImageStyle('../assets/home-1.jpeg', 90vh);
 }
 
 // Food Feature Section
 .foodSection, .menu, .menuItems {
-    @include gridStyle(1fr 1fr, $gridRows, $gap)
+    @include gridStyle(1fr 1fr, 1fr, 0)
 }
 
 .mostPopularRecipes {
@@ -35,7 +48,7 @@ header {
 }
 
 .menuItems {
-    @include gridStyle($gridColumns, repeat(3, 1fr), 30px);
+    @include gridStyle(auto, repeat(3, 1fr), 30px);
     grid-auto-flow: column;
     width: 75%;
     margin: 100px auto;
@@ -81,7 +94,7 @@ article {
 
 // Image grid
 .imageGallery {
-    @include gridStyle(repeat(3, 1fr), 1fr 1fr, $gap)
+    @include gridStyle(repeat(3, 1fr), 1fr 1fr, 0)
 }
 
 // Hungry Clients

@@ -1,6 +1,19 @@
 @import '../layout/header';
 @import '../layout/footer';
 
+// Skip to Content Nav
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+    .skipLink:focus {
+        left: 0;
+    }
+}
+
 .blogHeader {
     @include backgroundImageStyle('../assets/blog-1.jpeg', 65vh);
     background-position: center;
@@ -44,7 +57,7 @@ section.blog {
 
 // Author
 .author {
-    @include gridStyle(1fr 4fr, $gridRows, $gap);
+    @include gridStyle(1fr 4fr, 1fr, 0);
     padding: 50px 0 50px 0;
     div:nth-child(2) {
         background-color: $blogSectionColor;
@@ -57,7 +70,7 @@ section.blog {
 
 // Related Posts
 .relatedPostsGrid {
-    @include gridStyle(repeat(3, 1f4), $gridRows, 25px);
+    @include gridStyle(repeat(3, 1fr), 1fr, 25px);
     div:nth-child(2) {
         padding: 25px 0 25px 0;
     }
@@ -108,7 +121,7 @@ section.blog {
 
 // Comment Form
 .blogForm {
-    @include gridStyle(repeat(3, 1fr), $gridRows, $gap);
+    @include gridStyle(repeat(3, 1fr), 1fr, 0);
     column-gap: 30px;
     margin: 20px 0 150px 0;
     input {

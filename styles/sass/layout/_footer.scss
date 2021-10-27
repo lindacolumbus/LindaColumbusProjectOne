@@ -1,5 +1,5 @@
 .footerInfo {
-    @include gridStyle(2fr 2fr 1.75fr, $gridRows, 120px);
+    @include gridStyle(2fr 2fr 1.75fr, 1fr, 120px);
     padding: 100px 0;
     ul {
         margin-top: 20px;

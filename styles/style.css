@@ -612,6 +612,8 @@ nav .home, nav .blog, nav .contact {
   display: grid;
   -ms-grid-columns: 2fr 2fr 1.75fr;
       grid-template-columns: 2fr 2fr 1.75fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 120px;
   padding: 100px 0;
 }
@@ -747,6 +749,19 @@ footer .copyright {
   }
 }
 
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skipLink .skipLink:focus {
+  left: 0;
+}
+
 header {
   background-image: url("../assets/home-1.jpeg");
   background-size: cover;
@@ -757,8 +772,11 @@ header {
 .foodSection, .menu, .menuItems {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0;
 }
 
 .mostPopularRecipes {
@@ -799,10 +817,14 @@ header {
 }
 
 .menuItems {
-  grid-auto-flow: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
   gap: 30px;
+  grid-auto-flow: column;
   width: 75%;
   margin: 100px auto;
 }
@@ -856,10 +878,11 @@ article h3 {
 .imageGallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 0;
 }
 
 .testimonials {
@@ -1147,6 +1170,8 @@ nav .home, nav .blog, nav .contact {
   display: grid;
   -ms-grid-columns: 2fr 2fr 1.75fr;
       grid-template-columns: 2fr 2fr 1.75fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 120px;
   padding: 100px 0;
 }
@@ -1282,6 +1307,19 @@ footer .copyright {
   }
 }
 
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skipLink .skipLink:focus {
+  left: 0;
+}
+
 .blogHeader {
   background-image: url("../assets/blog-1.jpeg");
   background-size: cover;
@@ -1340,6 +1378,9 @@ section.blog {
   display: grid;
   -ms-grid-columns: 1fr 4fr;
       grid-template-columns: 1fr 4fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0;
   padding: 50px 0 50px 0;
 }
 
@@ -1355,8 +1396,10 @@ section.blog {
 .relatedPostsGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 25px;
 }
 
@@ -1420,6 +1463,9 @@ section.blog {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0;
   -webkit-column-gap: 30px;
           column-gap: 30px;
   margin: 20px 0 150px 0;
@@ -1638,6 +1684,8 @@ nav .home, nav .blog, nav .contact {
   display: grid;
   -ms-grid-columns: 2fr 2fr 1.75fr;
       grid-template-columns: 2fr 2fr 1.75fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 120px;
   padding: 100px 0;
 }
@@ -1771,6 +1819,19 @@ footer .copyright {
   .subscribe .socialIcons {
     margin-top: 15px;
   }
+}
+
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skipLink .skipLink:focus {
+  left: 0;
 }
 
 .contactHeader {
