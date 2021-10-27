@@ -1,7 +1,5 @@
 .footerInfo {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1.75fr;
-    gap: 120px;
+    @include gridStyle(2fr 2fr 1.75fr, $gridRows, 120px);
     padding: 100px 0;
     ul {
         margin-top: 20px;

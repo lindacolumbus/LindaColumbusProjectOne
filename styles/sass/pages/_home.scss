@@ -7,8 +7,7 @@ header {
 
 // Food Feature Section
 .foodSection, .menu, .menuItems {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    @include gridStyle(1fr 1fr, $gridRows, $gap)
 }
 
 .mostPopularRecipes {
@@ -36,9 +35,8 @@ header {
 }
 
 .menuItems {
+    @include gridStyle($gridColumns, repeat(3, 1fr), 30px);
     grid-auto-flow: column;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
     width: 75%;
     margin: 100px auto;
 }
@@ -83,9 +81,7 @@ article {
 
 // Image grid
 .imageGallery {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    @include gridStyle(repeat(3, 1fr), 1fr 1fr, $gap)
 }
 
 // Hungry Clients
@@ -156,12 +152,11 @@ blockquote i,
     .foodSection {
         display: block;
         position: relative;
-    }
-
-    .foodSection div:nth-child(2) {
-        width: 50%;
-        img {
-            padding-left: 50px;
+        div:nth-child(2) {
+            width: 50%;
+            img {
+                padding-left: 50px;
+            }
         }
     }
 
@@ -171,15 +166,14 @@ blockquote i,
 
     .menu {
         display: block;
-        position: relative
-    }
-
-    .menu div:first-child {
-        img {
+        position: relative;
+        div:first-child {
+            img {
             position: absolute;
             width: 50%;
             top: -400px;
             left: 470px;
+            }
         }
     }
 
@@ -242,11 +236,10 @@ blockquote i,
         padding-bottom: 75px;
         article {
             margin-bottom: 50px;
+        };
+        article:last-child {
+            margin: 0;
         }
-    }
-
-    .menuItems article:last-child {
-        margin: 0;
     }
 
     .restaurants {
@@ -300,5 +293,5 @@ blockquote i,
     .fa-quote-right {
     bottom: -10%;
     right: -20%;
-}
+    }
 }

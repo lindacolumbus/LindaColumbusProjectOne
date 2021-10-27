@@ -24,6 +24,11 @@ section.blog {
 // Blog Post Tags
 .tags {
     padding: 20px 0 20px 0;
+    div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
 }
 
 .tags > div {
@@ -37,32 +42,25 @@ section.blog {
     }
 }
 
-.tags div:nth-child(2) {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
 // Author
 .author {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    @include gridStyle(1fr 4fr, $gridRows, $gap);
     padding: 50px 0 50px 0;
-}
-
-.author div:nth-child(2) {
-    background-color: $blogSectionColor;
-    padding: 35px;
-    h4 {
-        margin-bottom: 15px;
+    div:nth-child(2) {
+        background-color: $blogSectionColor;
+        padding: 35px;
+        h4 {
+            margin-bottom: 15px;
+        }
     }
 }
 
 // Related Posts
 .relatedPostsGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
+    @include gridStyle(repeat(3, 1f4), $gridRows, 25px);
+    div:nth-child(2) {
+        padding: 25px 0 25px 0;
+    }
 }
 
 .relatedPosts {
@@ -78,31 +76,22 @@ section.blog {
     display: flex;
 }
 
-.relatedPostsGrid div:nth-child(2) {
-    padding: 25px 0 25px 0;
-}
-
 // Comments
 
 .blog.comments {
     margin-bottom: 40px;
     border-bottom: none;
-}
-
-.comments {
     h3 {
         padding: 25px 0 25px 0;
     }
 }
+
 .commentsGrid {
-    display: grid;
-    grid-template-columns: 1fr 18fr;
-    grid-template-rows: auto;
-    gap: 25px;
-}
-.commentsGrid div:nth-child(2),
-.commentsGrid div:nth-child(4) {
-    background-color: $blogSectionColor;
+    @include gridStyle(1fr 18fr, auto, 25px);
+    div:nth-child(2),
+    div:nth-child(4) {
+        background-color: $blogSectionColor;
+    }
 }
 
 .commentsText {
@@ -119,8 +108,7 @@ section.blog {
 
 // Comment Form
 .blogForm {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    @include gridStyle(repeat(3, 1fr), $gridRows, $gap);
     column-gap: 30px;
     margin: 20px 0 150px 0;
     input {
