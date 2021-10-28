@@ -536,6 +536,11 @@ nav .home, nav .blog, nav .contact {
   color: #64a604;
 }
 
+nav li a:hover,
+nav li a:focus {
+  color: #64a604;
+}
+
 .fa-shopping-bag {
   position: relative;
 }
@@ -826,7 +831,7 @@ header {
   gap: 30px;
   grid-auto-flow: column;
   width: 75%;
-  margin: 100px auto;
+  margin: 10% auto;
 }
 
 article {
@@ -1091,6 +1096,11 @@ nav ul {
 }
 
 nav .home, nav .blog, nav .contact {
+  color: #64a604;
+}
+
+nav li a:hover,
+nav li a:focus {
   color: #64a604;
 }
 
@@ -1605,6 +1615,11 @@ nav ul {
 }
 
 nav .home, nav .blog, nav .contact {
+  color: #64a604;
+}
+
+nav li a:hover,
+nav li a:focus {
   color: #64a604;
 }
 

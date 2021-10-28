@@ -10,6 +10,10 @@ nav {
     .home, .blog, .contact {
         color: $accentTextColor;
     }
+    li a:hover,
+    li a:focus {
+        color: $accentTextColor;
+    }
 }
 
 .fa-shopping-bag {
