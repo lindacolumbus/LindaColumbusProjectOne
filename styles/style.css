@@ -1949,6 +1949,16 @@ footer .copyright {
   font-style: italic;
 }
 
+.modal {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+}
+
+.contactForm {
+  position: relative;
+}
+
 @media (max-width: 1200px) {
   .contactSection form input {
     -ms-grid-column: 1;
