@@ -560,6 +560,12 @@ nav li a:focus {
   left: 11px;
 }
 
+.hiddenMenu {
+  display: none;
+  text-align: right;
+  padding-top: 50px;
+}
+
 .fa.fa-bars {
   display: none;
   font-size: 5rem;
@@ -1123,6 +1129,12 @@ nav li a:focus {
   left: 11px;
 }
 
+.hiddenMenu {
+  display: none;
+  text-align: right;
+  padding-top: 50px;
+}
+
 .fa.fa-bars {
   display: none;
   font-size: 5rem;
@@ -1640,6 +1652,12 @@ nav li a:focus {
   position: absolute;
   top: 9px;
   left: 11px;
+}
+
+.hiddenMenu {
+  display: none;
+  text-align: right;
+  padding-top: 50px;
 }
 
 .fa.fa-bars {
