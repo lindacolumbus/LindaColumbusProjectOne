@@ -1,4 +1,5 @@
-/* 1. FORM FUNCTIONALITY ON CONTACT PAGE
+/* 
+1. FORM FUNCTIONALITY ON CONTACT PAGE
 When a user fills out the form and hits the submit button:
     their name is stored as a variable
     a pop-up window appears with a personalized message
@@ -36,7 +37,8 @@ formEl.addEventListener(`submit`, function(event) {
 });
 
 
-/* 2. HAMBURGER MENU ON SMALLER SCREEN SIZES (CURRENTLY ONLY USED ON CONTACT PAGE)
+/* 
+2. HAMBURGER MENU ON SMALLER SCREEN SIZES (CURRENTLY ONLY USED ON CONTACT PAGE)
 When the browser scales down and the horizontal menu nav collapses into a hamburger menu icon:
     when clicking the icon, a hidden drop down menu appears
     when clicking the icon again, the menu disappears
@@ -49,21 +51,14 @@ const menu = document.querySelector(`.hiddenMenu`);
 const menuIcon = document.querySelector(`.fa.fa-bars`);
 
 // event handling upon hamburger icon click
-//hidden drop down menu appears
-menuIcon.addEventListener(`click`, function(menuEvent) {
-    menu.style.display = `block`;
-
-    // if user wants to close drop down menu, click the hamburger icon again to hide the drop down menu
-    if (menu.style.display === `block`) {
-        menuIcon.addEventListener(`click`, function(hideMenu) {
-            menu.style.display = `none`
-        })
-        // trying to figure out how to have the icon continuously toggle between hiding/showing the drop down menu.
-        // this code doesn't seem to register:
-    } else if (menu.style.display === `none`) {
-        console.log(`hello`)
-        menuIcon.addEventListener(`click`, function(showMenuAgain) {
-            menu.style.display = `block`
-        })
+menuIcon.addEventListener(`click`, function(event) {
+    // defining variable for when hamburger menu is visible
+    const isVisible = menu.style.display === `block`;
+    // if hamburger menu is visible, click event = display: none
+    if (isVisible) {
+        menu.style.display = `none`;
+        // otherwise, hamburger menu is invisible, click event = display: block
+    } else {
+        menu.style.display = `block`;
     }
 })
