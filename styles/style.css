@@ -253,7 +253,7 @@ li {
   list-style: none;
 }
 
-button {
+button, .greenNavigationLink {
   color: #F6F6F6;
   background-color: #64a604;
   text-decoration: none;
@@ -283,7 +283,7 @@ h4, button a, footer i {
   color: #999999;
 }
 
-h1, h2, h3, h4, nav li, button a {
+h1, h2, h3, h4, nav li, button a, .greenNavigationLink {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -345,7 +345,7 @@ footer h3 {
   font-size: 3rem;
 }
 
-p, button a, .footerInfo h4 {
+p, button a, .footerInfo h4, .greenNavigationLink {
   font-size: 1.3rem;
   line-height: 27px;
   letter-spacing: 0.5px;
